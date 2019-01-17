@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="styles/app.css">
     <title>Document</title>
 </head>
-<body>
-    
-    <h1>codeBreak;</h1>
 
+<body>
+    <div class='container'>
+        <nav class='js-nav'>
+            <div class="nav-wrapper amber darken-2">
+                <a href="#" class="brand-logo center disabled"><strong>codeBreak;</strong></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down js-nav-buttons">
+                    <li><a href="#" class='js-home'>Home</a></li>
+                    <li><a href="#" class='js-series'>Series</a></li>
+                    <!-- <li><a href="collapsible.html">JavaScript</a></li> -->
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down js-nav-buttons">
+                    <li><a href="#" class='js-aboutus'>About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class='js-episodes'>
+            <div class="col s12 m7">
+                <h2 class="header">Pilot</h2>
+                <div class="card horizontal">
+                    <div class="card-image">
+                        <img src="assets/images/victoria_buchanan.png" style='height: auto; width: 200px;'>
+                        <span class="card-title black-text flow-text" style='font-size: 20px;'>Victoria Buchanan</span>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src='js/app.js'> </script>
 </body>
+
 </html>
