@@ -35,7 +35,7 @@ const episodeCard = (name, host, guest, description, img, link) => {
     <div class="card-image waves-effect waves-block waves-light">
       <img class="activator" src="${img}" style="height: auto; width: 200px;">
     </div>
-    <div class="card-content">
+    <div class="card-content row">
       <span class="card-title activator grey-text text-darken-4"><span class='h3'>${name} <span class='grey-text'>// ${guest}</span></span><i class="material-icons right">more_vert</i></span>
       <p>${description}</p>
         <div class="m-0 card-action">
@@ -65,6 +65,7 @@ let state = {
         guest: 'Victoria Buchanan',
         description: 'Guest description goes here',
         image: 'assets/images/victoria_buchanan.png',
+        link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-pilot-victoria/s-FjgMP',
     }],
 
 };
