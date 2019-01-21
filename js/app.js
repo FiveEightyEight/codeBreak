@@ -2,6 +2,7 @@
 
 const navBtns = document.querySelector('.js-nav-buttons');
 const episodes = document.querySelector('.js-episodes');
+const main = document.querySelector('.js-main');
 
 
 // ------- HELPERS ---------->>>
