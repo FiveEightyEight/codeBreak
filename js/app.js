@@ -3,10 +3,29 @@
 const navBtns = document.querySelector('.js-nav-buttons');
 const episodes = document.querySelector('.js-episodes');
 const main = document.querySelector('.js-main');
+const schedule = document.querySelector('.js-schedule');
 
 
 // ------- HELPERS ---------->>>
 
+const scheduleCard = (schedule) => {
+    let innerHTML = '';
+    for(let i = 0; i < schedule.length; i ++) {
+        const guest = schedule[i];
+        innerHTML += `
+        <li class="collection-item">
+        <div>
+        ${guest.guest}
+        <span class='secondary-content'>
+        Release: 
+        ${guest.date}
+        </span>
+        </div>
+        </li>
+        `; 
+    };
+    return innerHTML;
+};
 
 const episodeCard = (name, host, guest, description, img, link) => {
     /*
@@ -59,6 +78,15 @@ const episodeCard = (name, host, guest, description, img, link) => {
 let state = {
 
     page: 0,
+    schedule: [{
+        guest: 'Jorge Billini',
+        date: 'TBD',
+        note: undefined,
+    }, {
+        guest: 'Osita Igwe',
+        date: 'TBD',
+        note: 'Second Interview',
+    }],
     episode: [{
         season: 0,
         name: 'Pilot',
@@ -88,6 +116,15 @@ const render = (state) => {
                 episodes.innerHTML += episodeCard(e.name, e.host, e.guest, e.description, e.image, e.link);
 
             }
+            schedule.innerHTML = '';
+            schedule.innerHTML = `
+            <ul class="collection with-header">
+            <li class="collection-header">
+                <h4>Schedule</h4>
+            </li>
+            ${scheduleCard(state.schedule)}
+        </ul>
+            `;
             break;
     }
 };
