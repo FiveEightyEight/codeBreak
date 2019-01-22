@@ -65,7 +65,7 @@ const episodeCard = (episodes) => {
                 <span class="card-title activator grey-text text-darken-4"><span class='h3'>${e.name} <span class='grey-text'>// ${e.guest}</span></span><i class="material-icons right">more_vert</i></span>
                 <p>${e.description}</p>
                 <div class="m-0 card-action">
-                    <a href="${e.link}">LISTEN TO EPISODE</a>
+                    <a target='_blank' href="${e.link}">LISTEN TO EPISODE</a>
                 </div>
             </div>
             <div class="card-reveal row">
