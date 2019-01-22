@@ -53,11 +53,11 @@ const episodeCard = (episodes) => {
 
     let innerHTML = '';
     for (let i = 0; i < episodes.length; i++) {
-        const e = episodes[i];
-        e.name, e.host, e.host_img, e.guest, e.description, e.image, e.link
+        const e = episodes[episodes.length - i - 1];
+        // e.name, e.host, e.host_img, e.guest, e.description, e.image, e.link
 
         innerHTML += `
-        <div class="card horizontal row">
+        <div class="col s12 row card horizontal" data-index=${i}>
             <div class="col s5 card-image waves-effect waves-block waves-light">
                 <img class="activator" src="${e.image}" style="height: auto; width: 200px;">
             </div>
@@ -85,7 +85,7 @@ const episodeCard = (episodes) => {
                   </p>
                   <a href="${e.guest_link}" class="secondary-content"><i class="material-icons">code</i></a>
                 </li>
-                </ul
+                </ul>
             </div>
         </div>
     `
@@ -93,7 +93,7 @@ const episodeCard = (episodes) => {
     return innerHTML;
 
     // old card render
-     /*
+    /*
         return innerHTML = `
         <div class="col s12 m7">
             <h2 class="header">${name}</h2>
@@ -134,17 +134,31 @@ let state = {
         note: 'Second Interview',
     }, ],
     episodes: [{
-        season: 0,
-        name: 'Pilot',
-        host: 'Daniel Ashley',
-        host_img: 'assets/images/daniel_ashley.png',
-        host_link:'https://github.com/DanielEduardoAshley',
-        guest: 'Victoria Buchanan',
-        description: 'Guest description goes here',
-        image: 'assets/images/victoria_buchanan.png',
-        guest_link:'https://github.com/VictoriaBuchanan27',
-        link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-pilot-victoria/s-FjgMP',
-    }],
+            season: 0,
+            name: 'Pilot',
+            host: 'Daniel Ashley',
+            host_img: 'assets/images/daniel_ashley.png',
+            host_link: 'https://github.com/DanielEduardoAshley',
+            guest: 'Victoria Buchanan',
+            description: 'Guest description goes here',
+            image: 'assets/images/victoria_buchanan.png',
+            guest_link: 'https://github.com/VictoriaBuchanan27',
+            link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-pilot-victoria/s-FjgMP',
+        },
+        {
+            season: 0,
+            name: 'Episode 1',
+            host: 'Daniel Ashley',
+            host_img: 'assets/images/daniel_ashley.png',
+            host_link: 'https://github.com/DanielEduardoAshley',
+            cohost:'Victoria Buchanan',
+            guest: 'Osita Igwe',
+            description: 'Guest description goes here',
+            image: 'assets/images/osita_igwe.png',
+            guest_link: 'https://github.com/oigwe',
+            link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-01-osita/s-90ux5',
+        }
+    ],
 
 };
 
@@ -164,9 +178,9 @@ const render = (state) => {
             break;
 
         case 2:
-        episodes.innerHTML = '';
-        schedule.innerHTML = '';
-        break;
+            episodes.innerHTML = '';
+            schedule.innerHTML = '';
+            break;
     }
 };
 
