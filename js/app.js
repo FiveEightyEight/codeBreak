@@ -69,7 +69,7 @@ const episodeCard = (episodes) => {
     for (let i = 0; i < episodes.length; i++) {
         const e = episodes[episodes.length - i - 1];
         // e.name, e.host, e.host_img, e.guest, e.description, e.image, e.link
-
+        // flow-text
         innerHTML += `
         <div class="col s12 row card horizontal" data-index=${i}>
             <div class="col s5 card-image waves-effect waves-block waves-light">
@@ -77,7 +77,7 @@ const episodeCard = (episodes) => {
             </div>
             <div class="col s7 card-content row">
                 <span class="card-title activator grey-text text-darken-4"><span class='h3'>${e.name} <span class='grey-text'>// ${e.guest}</span></span><i class="material-icons right">more_vert</i></span>
-                <p>${e.description}</p>
+                <p class=''>${e.description}</p>
                 <div class="m-0 card-action">
                     <a target='_blank' href="${e.link}">LISTEN TO EPISODE</a>
                 </div>
@@ -105,11 +105,11 @@ const episodeCard = (episodes) => {
 
 const hostReveal = (hosts) => {
     let innerHTML = '';
-    
-    for (let i = 0; i < hosts.length; i ++){
+
+    for (let i = 0; i < hosts.length; i++) {
         const host = hosts[i].toLowerCase();
         if (i === 0) {
-            innerHTML +=`
+            innerHTML += `
             <li class="collection-item avatar">
                 <img src="${ALLhosts[host].host_img}" alt="" class="circle">
                 <span class="title">Host</span>
@@ -118,8 +118,8 @@ const hostReveal = (hosts) => {
                 <a href="${ALLhosts[host].host_link}" class="secondary-content"><i class="material-icons">code</i></a>
             </li>`
             continue;
-        } else  {
-            innerHTML +=`
+        } else {
+            innerHTML += `
             <li class="collection-item avatar">
                 <img src="${ALLhosts[host].host_img}" alt="" class="circle">
                 <span class="title">Co-host</span>
@@ -169,7 +169,7 @@ let state = {
             name: 'Episode 1',
             host: ['Daniel', 'Victoria'],
             guest: 'Osita Igwe',
-            description: 'Guest description goes here',
+            description: 'Join myself Daniel Ashley and Victoria Buchanan your hosts at CodeBreak, as in this episode we welcome Osita Igwe Full Stack Web Developer and class cohort lead 5.2. Discover the unique journey that led her to programming and her interest in streamlining everyday difficulties with technology. We also discover some of her hidden talents and interests outside of coding (Ask her about Strictly Come Dancing!) and hear her 1 minute elevator pitch about who is Osita Igwe!',
             image: 'assets/images/osita_igwe.png',
             guest_link: 'https://github.com/oigwe',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-01-osita/s-90ux5',
@@ -179,7 +179,7 @@ let state = {
             name: 'Episode 2',
             host: ['Daniel', 'Victoria'],
             guest: 'Alexander Onate',
-            description: 'Guest description goes here',
+            description: 'Join myself Daniel Ashley and Victoria Buchanan your hosts at CodeBreak, as we welcome Alex Ajonte Full Stack Web Developer and Tech Lead 5.2. In this episode, I learn Spanish and we discuss the brave tenacity that brought Alex to pursuit. We talk about entrepreneurship and the value in asking for help. We also learn about what tech company he is eyeing and why. Ask him about his love of podcasts and how many hours he has logged listening to them in a week!',
             image: 'assets/images/alexander_onate.png',
             guest_link: 'https://github.com/aionate0812',
             link: undefined,
@@ -189,7 +189,7 @@ let state = {
             name: 'Episode 3',
             host: ['Daniel', 'Victoria'],
             guest: 'Jorge Billini',
-            description: 'Guest description goes here',
+            description: 'Join myself Daniel Ashley and Victoria Buchanan your hosts at CodeBreak, as we welcome Jorge Billini Full Stack Web Developer 5.2. In this episode, we talk about his life long love of technology and what first sparked his interest in software. We talk about the power of images and data worth a thousand words. We round it out by asking him to give us his one minute pitch on who is Jorge Billini. Ask him about combining his love of music, video games, photography and coding!',
             image: 'assets/images/jorge_billini.png',
             guest_link: 'https://github.com/JorgeBillini',
             link: undefined,
