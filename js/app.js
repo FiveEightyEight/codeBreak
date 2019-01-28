@@ -125,10 +125,15 @@ let state = {
     page: 0,
     schedule: [{
         guest: 'Jorge Billini',
-        record: '01/26/2019',
-        date: '01/27/2019',
+        record: '01/27/2019',
+        date: '01/29/2019',
         note: undefined,
     }, {
+        guest: 'Alexander',
+        record: '01/27/2019',
+        data: '01/29/2019',
+        note: undefined,
+    },{
         guest: 'Osita Igwe',
         date: 'TBD',
         note: 'Second Interview',
