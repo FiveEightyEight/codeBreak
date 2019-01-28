@@ -131,7 +131,7 @@ let state = {
     }, {
         guest: 'Alexander',
         record: '01/27/2019',
-        data: '01/29/2019',
+        date: '01/29/2019',
         note: undefined,
     },{
         guest: 'Osita Igwe',
