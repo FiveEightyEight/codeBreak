@@ -71,13 +71,13 @@ const episodeCard = (episodes) => {
         // e.name, e.host, e.host_img, e.guest, e.description, e.image, e.link
         // flow-text
         innerHTML += `
-        <div class="col s12 row card horizontal" data-index=${i} style="height: 200px;">
+        <div class="col s12 row card horizontal" data-index=${i} style="height: auto;">
             <div class="col s5 card-image waves-effect waves-block waves-light">
-                <img class="activator" src="${e.image}" style="height: auto; width: 200px;">
+                <img class="activator" src="${e.image}" style="height: auto; width: auto;">
             </div>
             <div class="col s7 card-content  row" >
                 <span class="card-title activator grey-text text-darken-4"><span class='h3'>${e.name} <span class='grey-text'>// ${e.guest}</span></span><i class="material-icons right">more_vert</i></span>
-                <p class='' style="height: 80px; overflow: scroll;">${e.description}</p>
+                <p class='' style="height: 100px; overflow: scroll;">${e.description}</p>
                 <div class="m-0 card-action">
                     ${isLinkAvailable(e.link)}
                 </div>
