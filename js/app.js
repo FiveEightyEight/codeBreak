@@ -79,7 +79,7 @@ const episodeCard = (episodes) => {
                 <span class="card-title activator grey-text text-darken-4"><span class='h3'>${e.name} <span class='grey-text'>// ${e.guest}</span></span><i class="material-icons right">more_vert</i></span>
                 <p class=''>${e.description}</p>
                 <div class="m-0 card-action">
-                    <a target='_blank' href="${e.link}">LISTEN TO EPISODE</a>
+                    ${isLinkAvailable(e.link)}
                 </div>
             </div>
             <div class="card-reveal row">
@@ -132,6 +132,13 @@ const hostReveal = (hosts) => {
     return innerHTML;
 };
 
+const isLinkAvailable = (link) => {
+    if (link) {
+        return `<a target='_blank' href="${link}">LISTEN TO EPISODE</a>`
+    } else {
+        return `<span class='grey-text'  href="#">EPISODE UNAVAILABLE</span>`
+    }
+}
 
 
 // ----- STATE ----- >>
@@ -151,7 +158,11 @@ let state = {
         note: undefined,
     }, {
         guest: 'Osita Igwe',
-        date: 'TBD',
+        date: '1/13/2019',
+        note: 'Second Interview',
+    }, {
+        guest: 'Victoria Buchanan',
+        date: '1/11/2019',
         note: 'Second Interview',
     }, ],
     episodes: [{
