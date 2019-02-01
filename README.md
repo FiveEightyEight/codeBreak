@@ -5,12 +5,19 @@
 ## Intro:
 
 Sit back, relax, listen in to learn more about your classmates of 5.2
+> Hosted on [SoundCloud](https://soundcloud.com/codebreak-fivetwo) 
 ___
 
 ## Series
 | Episode | Host(s)| Guest    |
 |---------|--------| ---------|
-|Pilot    | Daniel | Victoria |
+|Pilot    | Daniel | Victoria Buchanan |
+|01    | Daniel & Victoria | Osita Igwe |
+|02    | Daniel & Victoria | Alexander Onate |
+|03    | Daniel & Victoria | Jorge Billini |
+<!-- |04    | Daniel & Victoria | Steve Regis | -->
+
+
 
 ___
 
