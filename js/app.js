@@ -147,9 +147,14 @@ let state = {
 
     page: 0,
     schedule: [{
+        guest: 'Steve Regis',
+        record: '02/02/2019',
+        date: '02/03/2019',
+        note: undefined,
+    }, {
         guest: 'Jorge Billini',
         record: '01/27/2019',
-        date: '01/29/2019',
+        date: '01/31/2019',
         note: undefined,
     }, {
         guest: 'Alexander',
@@ -203,7 +208,7 @@ let state = {
             description: 'Join myself Daniel Ashley and Victoria Buchanan your hosts at CodeBreak, as we welcome Jorge Billini Full Stack Web Developer 5.2. In this episode, we talk about his life long love of technology and what first sparked his interest in software. We talk about the power of images and data worth a thousand words. We round it out by asking him to give us his one minute pitch on who is Jorge Billini. Ask him about combining his love of music, video games, photography and coding!',
             image: 'assets/images/jorge_billini.png',
             guest_link: 'https://github.com/JorgeBillini',
-            link: undefined,
+            link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-03-jorge-1/s-2oIM5',
         },
     ],
 
