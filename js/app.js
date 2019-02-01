@@ -38,27 +38,49 @@ aboutUs.addEventListener('click', e => {
 // ------- HELPERS ---------->>>
 
 const scheduleCard = (schedule) => {
-    let innerHTML = '';
+    let innerPre = '';
+    let innerPost = '';
     for (let i = 0; i < schedule.length; i++) {
         const guest = schedule[i];
-        innerHTML += `
-        <li class="collection-item" style="height: auto;">
-        <div>
-        ${guest.guest}
-        <span class='secondary-content'>
-        Release: 
-        ${guest.date}
-        </span>
-        </div>
-        </li>
-        `;
+        if (guest.released) {
+
+            innerPost += `
+            <li class="collection-item" style="height: auto;">
+            <div>
+            ${guest.guest}
+            <span class='secondary-content'> 
+            ${guest.date}
+            </span>
+            </div>
+            </li>
+            `;
+
+        } else {
+            innerPre += `
+            <li class="collection-item" style="height: auto;">
+            <div>
+            ${guest.guest}
+            <span class='secondary-content'>
+            Record Date: 
+            ${guest.record}
+            </span>
+            </div>
+            </li>
+            `;
+        }
     };
     return `
         <ul class="collection with-header">
             <li class="collection-header">
-                <h4>Schedule</h4>
+                <h4>Upcoming</h4>
             </li>
-            ${innerHTML}
+            ${innerPre}
+        </ul>
+        <ul class="collection with-header">
+            <li class="collection-header">
+                <h4>Released</h4>
+            </li>
+            ${innerPost}
         </ul>
     `
 };
@@ -151,24 +173,29 @@ let state = {
         record: '02/02/2019',
         date: '02/03/2019',
         note: undefined,
+        released: false,
     }, {
         guest: 'Jorge Billini',
         record: '01/27/2019',
         date: '01/31/2019',
         note: undefined,
+        released: true,
     }, {
         guest: 'Alexander',
         record: '01/27/2019',
         date: '01/29/2019',
         note: undefined,
+        released: true,
     }, {
         guest: 'Osita Igwe',
         date: '1/13/2019',
         note: 'Second Interview',
+        released: true,
     }, {
         guest: 'Victoria Buchanan',
         date: '1/11/2019',
         note: 'Second Interview',
+        released: true,
     }, ],
     episodes: [{
             season: 0,
