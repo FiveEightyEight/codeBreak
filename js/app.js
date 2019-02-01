@@ -175,7 +175,7 @@ let state = {
             name: 'Pilot',
             host: ['Daniel'],
             guest: 'Victoria Buchanan',
-            description: 'Pending description.',
+            description: 'Bright, congenial, and energetic; Ms. Buchanan kicks off codeBreak as our first interviewee!',
             image: 'assets/images/victoria_buchanan.png',
             guest_link: 'https://github.com/VictoriaBuchanan27',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-pilot-victoria/s-FjgMP',
