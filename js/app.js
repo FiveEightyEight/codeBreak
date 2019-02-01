@@ -158,7 +158,7 @@ const isLinkAvailable = (link, embed) => {
 
     if (link) {
         return `<a target='_blank' href="${link}"><em>LISTEN ON SOUNDCLOUD</em></a>
-        <div style='margin: 10px 0px 5px 0px;'>
+        <div style='margin: 10px 0px 5px 0px; overflow: auto; padding:5px 0px 20px 0px;'>
         <iframe width="auto" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${embed}&color=%22ff5500&inverse=false&auto_play=false&show_user=false"></iframe>
         </div>
 
@@ -175,6 +175,12 @@ let state = {
 
     page: 0,
     schedule: [{
+        guest: 'Erika Perez',
+        record: '02/02/2019',
+        date: '02/03/2019',
+        note: undefined,
+        released: false,
+    },{
         guest: 'Steve Regis',
         record: '02/02/2019',
         date: '02/03/2019',
