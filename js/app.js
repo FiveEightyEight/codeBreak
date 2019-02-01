@@ -101,7 +101,7 @@ const episodeCard = (episodes) => {
                 <span class="card-title activator grey-text text-darken-4"><span class='h3'>${e.name} <span class='grey-text'>// ${e.guest}</span></span><i class="material-icons right">more_vert</i></span>
                 <p class='' style="height: 100px; overflow: scroll;">${e.description}</p>
                 <div class="m-0 card-action">
-                    ${isLinkAvailable(e.link)}
+                    ${isLinkAvailable(e.link, e.embed)}
                 </div>
             </div>
             <div class="card-reveal row">
@@ -154,9 +154,15 @@ const hostReveal = (hosts) => {
     return innerHTML;
 };
 
-const isLinkAvailable = (link) => {
+const isLinkAvailable = (link, embed) => {
+
     if (link) {
-        return `<a target='_blank' href="${link}">LISTEN TO EPISODE</a>`
+        return `<a target='_blank' href="${link}"><em>LISTEN ON SOUNDCLOUD</em></a>
+        <div style='margin: 10px 0px 5px 0px;'>
+        <iframe width="auto" height="20" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${embed}&color=%22ff5500&inverse=false&auto_play=false&show_user=false"></iframe>
+        </div>
+
+        `
     } else {
         return `<span class='grey-text'  href="#">EPISODE UNAVAILABLE</span>`
     }
@@ -206,6 +212,7 @@ let state = {
             image: 'assets/images/victoria_buchanan.png',
             guest_link: 'https://github.com/VictoriaBuchanan27',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-pilot-victoria/s-FjgMP',
+            embed: '562206051%3Fsecret_token%3Ds-FjgMP',
         },
         {
             season: 0,
@@ -216,6 +223,7 @@ let state = {
             image: 'assets/images/osita_igwe.png',
             guest_link: 'https://github.com/oigwe',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-01-osita/s-90ux5',
+            embed: '562928241%3Fsecret_token%3Ds-90ux5', 
         },
         {
             season: 0,
@@ -226,6 +234,7 @@ let state = {
             image: 'assets/images/alexander_onate.png',
             guest_link: 'https://github.com/aionate0812',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-02-alex/s-tTYS7',
+            embed: '566849550%3Fsecret_token%3Ds-tTYS7', 
         },
         {
             season: 0,
@@ -236,6 +245,7 @@ let state = {
             image: 'assets/images/jorge_billini.png',
             guest_link: 'https://github.com/JorgeBillini',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-03-jorge-1/s-2oIM5',
+            embed: '568047414%3Fsecret_token%3Ds-2oIM5',
         },
     ],
 
