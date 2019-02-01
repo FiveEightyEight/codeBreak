@@ -42,7 +42,7 @@ const scheduleCard = (schedule) => {
     for (let i = 0; i < schedule.length; i++) {
         const guest = schedule[i];
         innerHTML += `
-        <li class="collection-item">
+        <li class="collection-item" style="height: auto;">
         <div>
         ${guest.guest}
         <span class='secondary-content'>
@@ -190,7 +190,7 @@ let state = {
             name: 'Episode 2',
             host: ['Daniel', 'Victoria'],
             guest: 'Alexander Onate',
-            description: 'Join myself Daniel Ashley and Victoria Buchanan your hosts at CodeBreak, as we welcome Alex Ajonte Full Stack Web Developer and Tech Lead 5.2. In this episode, I learn Spanish and we discuss the brave tenacity that brought Alex to pursuit. We talk about entrepreneurship and the value in asking for help. We also learn about what tech company he is eyeing and why. Ask him about his love of podcasts and how many hours he has logged listening to them in a week!',
+            description: 'Join myself Daniel Ashley and Victoria Buchanan your hosts at CodeBreak, as we welcome Alex Ajonte Full Stack Web Developer and Tech Lead 5.2. In this episode, I learn Spanish and we discuss the brave tenacity that brought Alex to the program. We talk about entrepreneurship and the value in asking for help. We also learn about what tech company he is eyeing and why. Ask him about his love of podcasts and how many hours he has logged listening to them in a week!',
             image: 'assets/images/alexander_onate.png',
             guest_link: 'https://github.com/aionate0812',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-02-alex/s-tTYS7',
