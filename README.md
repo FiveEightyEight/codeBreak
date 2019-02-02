@@ -25,3 +25,7 @@ ___
 * **Daniel Ashley** - *Host & Executive Producer* - [GitHub](https://github.com/DanielEduardoAshley) / [LinkedIn](https://www.linkedin.com/in/daniel-ashley-2907bb146/)
 * **Victoria Buchanan** - *Co-Host, Producer, & Technician* - [GitHub](https://github.com/VictoriaBuchanan27) / [LinkedIn](https://www.linkedin.com/in/victoria-buchanan-6b1789108/)
 * **Robert Abreu** - *Producer & Co-Host* - [GitHub](https://github.com/FiveEightyEight) / [LinkedIn](https://www.linkedin.com/in/fiveeightyeight/)
+
+### Acknowledgments
+
+* **Karan Taneja** - *Podcast Name & Image Editing* - [TK](https://github.com/Karan-Taneja)
