@@ -60,8 +60,7 @@ const scheduleCard = (schedule) => {
             <li class="collection-item" style="height: auto;">
             <div>
             ${guest.guest}
-            <span class='secondary-content'>
-            Record Date: 
+            <span class='secondary-content'> 
             ${guest.record}
             </span>
             </div>
@@ -72,7 +71,7 @@ const scheduleCard = (schedule) => {
     return `
         <ul class="collection with-header">
             <li class="collection-header">
-                <h4>Upcoming</h4>
+                <h4>Upcoming Recording</h4>
             </li>
             ${innerPre}
         </ul>
@@ -172,20 +171,32 @@ const isLinkAvailable = (link, embed) => {
 // ----- STATE ----- >>
 
 let state = {
-
+    //stephanie-durandisse/
     page: 0,
     schedule: [{
+        guest: 'Malcolm Barbee',
+        record: '02/03/2019',
+        date: '02/05/2019',
+        note: undefined,
+        released: false,
+    }, {
+        guest: 'Stephanie Durandisse',
+        record: '02/03/2019',
+        date: '02/04/2019',
+        note: undefined,
+        released: false,
+    }, {
         guest: 'Erika Perez',
         record: '02/02/2019',
         date: '02/03/2019',
         note: undefined,
         released: false,
-    },{
+    }, {
         guest: 'Steve Regis',
         record: '02/02/2019',
-        date: '02/03/2019',
+        date: '02/04/2019',
         note: undefined,
-        released: false,
+        released: true,
     }, {
         guest: 'Jorge Billini',
         record: '01/27/2019',
@@ -229,7 +240,7 @@ let state = {
             image: 'assets/images/osita_igwe.png',
             guest_link: 'https://github.com/oigwe',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-01-osita/s-90ux5',
-            embed: '562928241%3Fsecret_token%3Ds-90ux5', 
+            embed: '562928241%3Fsecret_token%3Ds-90ux5',
         },
         {
             season: 0,
@@ -240,7 +251,7 @@ let state = {
             image: 'assets/images/alexander_onate.png',
             guest_link: 'https://github.com/aionate0812',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-02-alex/s-tTYS7',
-            embed: '566849550%3Fsecret_token%3Ds-tTYS7', 
+            embed: '566849550%3Fsecret_token%3Ds-tTYS7',
         },
         {
             season: 0,
@@ -252,6 +263,17 @@ let state = {
             guest_link: 'https://github.com/JorgeBillini',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-03-jorge-1/s-2oIM5',
             embed: '568047414%3Fsecret_token%3Ds-2oIM5',
+        },
+        {
+            season: 0,
+            name: 'Episode 4',
+            host: ['Victoria', 'Daniel'],
+            guest: 'Steve Regis',
+            description: 'Father, entrepreneur, theorist. Steve gives us a look into his past and dives deep into his source of motivation.',
+            image: 'assets/images/steve_regis.png',
+            guest_link: 'https://github.com/CodeXRook',
+            link: 'https://soundcloud.com/codebreak-fivetwo/04-steve/s-mz4RM',
+            embed: '570219507%3Fsecret_token%3Ds-mz4RM',
         },
     ],
 
