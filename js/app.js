@@ -71,7 +71,7 @@ const scheduleCard = (schedule) => {
     return `
         <ul class="collection with-header">
             <li class="collection-header">
-                <h4>Upcoming Recording</h4>
+                <h4>Recordings</h4>
             </li>
             ${innerPre}
         </ul>
@@ -96,10 +96,10 @@ const episodeCard = (episodes) => {
             <div class="col s5 card-image waves-effect waves-block waves-light">
                 <img class="activator" src="${e.image}" style="height: auto; width: auto;">
             </div>
-            <div class="col s7 card-content  row" >
+            <div class="col s7 card-content  row" style='margin-bottom: 0px; padding: 10px 10px 0px 0px;'>
                 <span class="card-title activator grey-text text-darken-4"><span class='h3'>${e.name} <span class='grey-text'>// ${e.guest}</span></span><i class="material-icons right">more_vert</i></span>
                 <p class='' style="height: 100px; overflow: scroll;">${e.description}</p>
-                <div class="m-0 card-action">
+                <div class="m-0 card-action" style='margin-bottom: 0px; padding: 0;'>
                     ${isLinkAvailable(e.link, e.embed)}
                 </div>
             </div>
@@ -188,9 +188,9 @@ let state = {
     }, {
         guest: 'Erika Perez',
         record: '02/02/2019',
-        date: '02/03/2019',
+        date: '02/05/2019',
         note: undefined,
-        released: false,
+        released: true,
     }, {
         guest: 'Steve Regis',
         record: '02/02/2019',
@@ -274,12 +274,22 @@ let state = {
             guest_link: 'https://github.com/CodeXRook',
             link: 'https://soundcloud.com/codebreak-fivetwo/04-steve/s-mz4RM',
             embed: '570219507%3Fsecret_token%3Ds-mz4RM',
+        },{
+            season: 0,
+            name: 'Episode 5',
+            host: ['Daniel', 'Victoria'],
+            guest: 'Erika Perez',
+            description: 'A mother of two with an unyielding fervid zeal, Erika tells us about her journey to the program.',
+            image: 'assets/images/erika_perez.png',
+            guest_link: 'https://github.com/Eyiperez',
+            link: 'https://soundcloud.com/codebreak-fivetwo/04-erica/s-oMpCJ',
+            embed: '569678814%3Fsecret_token%3Ds-oMpCJ',
         },
     ],
 
 };
 
-
+//https://soundcloud.com/codebreak-fivetwo/04-erica/s-oMpCJ
 // ------- RENDER ----- >>>
 
 
