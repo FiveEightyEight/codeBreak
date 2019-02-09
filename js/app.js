@@ -274,7 +274,7 @@ let state = {
             guest_link: 'https://github.com/CodeXRook',
             link: 'https://soundcloud.com/codebreak-fivetwo/04-steve/s-mz4RM',
             embed: '570219507%3Fsecret_token%3Ds-mz4RM',
-        },{
+        }, {
             season: 0,
             name: 'Episode 5',
             host: ['Daniel', 'Victoria'],
@@ -283,6 +283,16 @@ let state = {
             image: 'assets/images/erika_perez.png',
             guest_link: 'https://github.com/Eyiperez',
             link: 'https://soundcloud.com/codebreak-fivetwo/04-erica/s-oMpCJ',
+            embed: '569678814%3Fsecret_token%3Ds-oMpCJ',
+        }, {
+            season: 0,
+            name: 'Episode 6',
+            host: ['Daniel', 'Victoria'],
+            guest: 'Stephanie Durandisse',
+            description: 'Discription Pending',
+            image: 'assets/images/stephanie_durandisse.png',
+            guest_link: 'https://github.com/sdurandisse3',
+            link: undefined,
             embed: '569678814%3Fsecret_token%3Ds-oMpCJ',
         },
     ],
