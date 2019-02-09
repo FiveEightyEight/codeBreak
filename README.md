@@ -15,7 +15,11 @@ ___
 |01    | Daniel & Victoria | Osita Igwe |
 |02    | Daniel & Victoria | Alexander Onate |
 |03    | Daniel & Victoria | Jorge Billini |
-<!-- |04    | Daniel & Victoria | Steve Regis | -->
+|04    | Victoria & Daniel | Steve Regis |
+|05    | Daniel & Victoria | Erika Perez |
+|06    | Daniel & Victoria | Stephanie Durandisse |
+
+
 
 
 

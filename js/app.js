@@ -182,9 +182,9 @@ let state = {
     }, {
         guest: 'Stephanie Durandisse',
         record: '02/03/2019',
-        date: '02/04/2019',
+        date: '02/09/2019',
         note: undefined,
-        released: false,
+        released: true,
     }, {
         guest: 'Erika Perez',
         record: '02/02/2019',
@@ -274,7 +274,7 @@ let state = {
             guest_link: 'https://github.com/CodeXRook',
             link: 'https://soundcloud.com/codebreak-fivetwo/04-steve/s-mz4RM',
             embed: '570219507%3Fsecret_token%3Ds-mz4RM',
-        },{
+        }, {
             season: 0,
             name: 'Episode 5',
             host: ['Daniel', 'Victoria'],
@@ -284,6 +284,16 @@ let state = {
             guest_link: 'https://github.com/Eyiperez',
             link: 'https://soundcloud.com/codebreak-fivetwo/04-erica/s-oMpCJ',
             embed: '569678814%3Fsecret_token%3Ds-oMpCJ',
+        }, {
+            season: 0,
+            name: 'Episode 6',
+            host: ['Daniel', 'Victoria'],
+            guest: 'Stephanie Durandisse',
+            description: 'Financial consultant by day, coder by night; Ms. Durandisse gives us a sneak peek into her life and her experience in the program.',
+            image: 'assets/images/stephanie_durandisse.png',
+            guest_link: 'https://github.com/sdurandisse3',
+            link: 'https://soundcloud.com/codebreak-fivetwo/06-stephanie/s-CEtN2',
+            embed: '572513847%3Fsecret_token%3Ds-CEtN2',
         },
     ],
 
