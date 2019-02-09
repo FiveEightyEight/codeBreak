@@ -182,9 +182,9 @@ let state = {
     }, {
         guest: 'Stephanie Durandisse',
         record: '02/03/2019',
-        date: '02/04/2019',
+        date: '02/09/2019',
         note: undefined,
-        released: false,
+        released: true,
     }, {
         guest: 'Erika Perez',
         record: '02/02/2019',
@@ -289,11 +289,11 @@ let state = {
             name: 'Episode 6',
             host: ['Daniel', 'Victoria'],
             guest: 'Stephanie Durandisse',
-            description: 'Discription Pending',
+            description: 'Financial consultant by day, coder by night; Ms. Durandisse gives us a sneak peek into her life and her experience in the program.',
             image: 'assets/images/stephanie_durandisse.png',
             guest_link: 'https://github.com/sdurandisse3',
-            link: undefined,
-            embed: '569678814%3Fsecret_token%3Ds-oMpCJ',
+            link: 'https://soundcloud.com/codebreak-fivetwo/06-stephanie/s-CEtN2',
+            embed: '572513847%3Fsecret_token%3Ds-CEtN2',
         },
     ],
 
