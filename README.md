@@ -18,6 +18,7 @@ ___
 |04    | Victoria & Daniel | Steve Regis |
 |05    | Daniel & Victoria | Erika Perez |
 |06    | Daniel & Victoria | Stephanie Durandisse |
+|07    | Daniel & Victoria | Malcolm Barbee |
 
 
 
