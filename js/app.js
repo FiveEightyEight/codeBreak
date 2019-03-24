@@ -19,7 +19,12 @@ const ALLhosts = {
         host: 'Victoria Buchanan',
         host_img: 'assets/images/victoria_buchanan.png',
         host_link: 'https://github.com/VictoriaBuchanan27',
-    }
+    },
+    malcolm: {
+        host: 'Malcolm Barbee',
+        host_img: 'assets/images/malcolm_barbee.png',
+        host_link: 'https://github.com/MalcolmBarbee',
+    },
 }
 
 // ------- EVENTS ---------->>>
@@ -174,11 +179,47 @@ let state = {
     //stephanie-durandisse/
     page: 0,
     schedule: [{
-        guest: 'Hervey Lamothe',
-        record: '02/09/2019',
-        date: '02/13/2019',
+        guest: 'IV Strickland',
+        record: '03/23/2019',
+        date: '03/25/2019',
         note: undefined,
         released: false,
+    }, {
+        guest: 'Syed Aziz',
+        record: '03/23/2019',
+        date: '03/25/2019',
+        note: undefined,
+        released: false,
+    }, {
+        guest: 'Richard Green',
+        record: '03/20/2019',
+        date: '03/25/2019',
+        note: undefined,
+        released: false,
+    }, {
+        guest: 'Chuyun "Yun" Huang',
+        record: '03/17/2019',
+        date: '03/25/2019',
+        note: undefined,
+        released: false,
+    }, {
+        guest: 'Nicole Hopkins',
+        record: '03/17/2019',
+        date: '03/25/2019',
+        note: undefined,
+        released: false,
+    }, {
+        guest: 'Mielyn "Mie" Acosta',
+        record: '02/23/2019',
+        date: '03/25/2019',
+        note: undefined,
+        released: false,
+    }, {
+        guest: 'Hervey Lamothe',
+        record: '02/09/2019',
+        date: '03/24/2019',
+        note: undefined,
+        released: true,
     }, {
         guest: 'Malcolm Barbee',
         record: '02/03/2019',
@@ -310,6 +351,16 @@ let state = {
             guest_link: 'https://github.com/MalcolmBarbee',
             link: 'https://soundcloud.com/codebreak-fivetwo/codebreak-07-malcolm/s-xucwI',
             embed: '574387485%3Fsecret_token%3Ds-xucwI',
+        },{
+            season: 0,
+            name: 'Episode 8',
+            host: ['Daniel', 'Malcolm'],
+            guest: 'Hervey Lamothe',
+            description: 'Description Pending',
+            image: 'assets/images/hervey_lamothe.png',
+            guest_link: 'https://github.com/herveylamothe',
+            link: 'https://soundcloud.com/codebreak-fivetwo/08-hervey/s-ElYMP',
+            embed: '595155498%3Fsecret_token%3Ds-ElYMP',
         },
     ],
 
