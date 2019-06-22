@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - "11.10.1"
+install:
+  - npm install
+before_script:
+  # - export CODE_COVERAGE_TOKEN=$CODE_COVERAGE_TOKEN
+#   - export GIPHY_API_KEY=$GIPHY_API_KEY
+  - export HEROKU_KEY=$HEROKU_KEY
+# script:
+  # - npm run write-coveralls
+  # - npm test
+deploy:
+  provider: heroku
+  api_key: $HEROKU_KEY
+  app: codebreak50
+  on: master 
+  strategy: git
