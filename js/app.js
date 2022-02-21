@@ -257,7 +257,7 @@ let state = {
         note: undefined,
         released: true,
     }, {
-        guest: 'Osita Igwe',
+        guest: '¯\\_(ツ)_/¯',
         date: '1/13/2019',
         note: 'Second Interview',
         released: true,
